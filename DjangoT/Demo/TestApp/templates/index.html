@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Django</title>
+</head>
+<body>
+    Name : {{ name }} <br>
+    age  : {{ age }}  <br>
+    Country : {{ country }} <br>
+    <h1>List of jobs</h1>
+{%  for item in loisirs %}
+<h3>{{ item }}</h3>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <title>DES</title>
+</head>
+<body>
+<h1>Crypt DES</h1>
+
+     <form  action="" method="POST">
+         {% csrf_token %}
+          <div style = "max-width:470px;">
+            <center>
+               <input type = "text" style = "margin-left:20%;"
+                  placeholder = "Message" name = "Msg" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <input type = "text" style = "margin-left:20%;"
+                  placeholder = "Cle" name = "Cle" />
+            </center>
+         </div>
+         <br>
+         <button type="submit" style = "margin-left:17%;">  Crypt Now</button>
+     </form>
+         {{ msg|escape|stringformat:'r' }}
+
+
+</body>
+</html>

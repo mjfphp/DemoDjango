@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <h1>List of students : </h1>
+   {% for item in s %}
+       <h2> <a href="/sd/{{ item.id }}">Prenom : {{ item.fname }} </a> , Nom : {{ item.lname }} , age : {{ item.age }}  dn:{{ item.dn}}</h2>
+   {% endfor %}
+</body>
+</html>
